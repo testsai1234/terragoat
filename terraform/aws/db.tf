@@ -410,6 +410,9 @@ EOF
     yor_trace            = "f7999d4e-c983-43ee-bd88-7903a6f8483e"
   })
   ebs_optimized = true
+  *_block_device {
+    encrypted = true
+  }
 }
 
 output "db_app_public_dns" {
